@@ -1,0 +1,160 @@
+{
+  "main": {
+    "id": "ddbb4ca231401013",
+    "type": "split",
+    "children": [
+      {
+        "id": "9ca6216c56e44c29",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e0ff2054b90cd9c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/uhv.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "53033b5664dddb3f",
+    "type": "split",
+    "children": [
+      {
+        "id": "af9a28a0d1fffadc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "760f13c7b7d09a58",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "fc4312a6c86f3c55",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f577f93ff4b0bfb6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "5aa8c5764630e7be",
+    "type": "split",
+    "children": [
+      {
+        "id": "523fbe01969996ca",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2ec7f87893f8b442",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "notes/uhv.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "86846d92eccfb1b7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "notes/uhv.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e69a1d2db1c1fe19",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "de353347b75753bc",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "notes/uhv.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "760f13c7b7d09a58",
+  "lastOpenFiles": [
+    "notes/dco.md",
+    "Untitled.canvas",
+    "notes/python.md",
+    "notes/rust.md",
+    "notes/os.md",
+    "imp_info_files/things-to-remember.md",
+    "imp_info_files/files_that_i_should_upload_when_i_feel_like_switcing.md",
+    "Welcome.md"
+  ]
+}
