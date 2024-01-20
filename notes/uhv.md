@@ -1,16 +1,19 @@
 # uhv
 
 ## Understanding the need, basic guidelines, content and process for Value Education What is Value Education
+
 * vba : ( instills ethnic and basic values )
 * va : ( what is valuable for human )
 
 ## importance of va
+
 * improve
 * examine and control
 * clarity clear
 * happy and harmonious human society
 
 ## fundamental values
+
 * right conduct ( sh, social, ethical )
 * peace
 * truth
@@ -18,6 +21,7 @@
 * non-violence
 
 ## guidelines for value education
+
 * universal
 * rational
 * natural and verifiable
@@ -25,6 +29,7 @@
 * leading to harmony
 
 ## define self exploration what is content of self exploration
+
 Self exploration is the process to find out what is valuable to me by investigating within myself. What is
 right for me and true for me has to be judged within myself. Once we start paying attention towards
 investigating into our present beliefs and aspirations, we get to know whether our aspirations and what
@@ -41,21 +46,25 @@ at all levels of our living
 * swarajya ( self-expression )
 
 ## process of self exploration
+
 * natural acc
 * experimental validation
 
 ## svdd, ssdd, ssss
+
 * sadhan viheen kukhi daridra
 * sadhan sampaan dukhi daridra
 * sadhan sampaam sukhi samriddha
 
 ## consequences of trend summarized
+
 * at the level of an individual
 * at the level of family
 * at the level of society
 * at the level of nature
 
 ## symptoms of happy person
+
 * integrity
 * embraced the living in the moment
 * gratitude
@@ -65,8 +74,8 @@ at all levels of our living
 * enjoy simple things
 
 ## levels of human being
+
 * myself
 * family
 * society
 * nature/ existence
-* 

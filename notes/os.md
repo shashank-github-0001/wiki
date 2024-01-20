@@ -1,4 +1,5 @@
 ## os 
+
 * manages hw
 * intermediary between user and kernel and basis for application software
 * allocation of resources
@@ -6,17 +7,20 @@
 * convienience and efficiency
 
 ## the diagram
+
 * apps / user
 * os
 * user
 
 ## os types
+
 * batch
 * time sharing
 * multi programming
 * processing and multitasking
 
 ## modern pcs
+
 * one or more cpus
 * device controllers connected through bus
 * to give access to shared memory
@@ -24,6 +28,7 @@
 * memory controller will synchronize access to the memory
 
 ## important terms
+
 * bootstrap program
     * stored in rom
     * load it onto os kernel
@@ -35,6 +40,7 @@
 
 
 ## what happens in interrpted
+
 * stops and transfers execution to a fixed location
 * service routine executes
     * isr ka starting address
@@ -42,6 +48,7 @@
 
 
 ## storage structures
+
 * registers
 * cache
 * volatile
@@ -52,6 +59,7 @@
     * battery backup 
 
 ## io structure
+
 * device controller
 * device driver
 * uniform interface with device and rest of the operating system
@@ -59,6 +67,7 @@
 * general purpose registers
 
 ## io operations
+
 * loads the registers ( driver )
 * checks what to do ( controller )
 * data device to local buffer
@@ -67,6 +76,7 @@
 * high overhead for bulk movement ( dma ) ( buffer to memory directly ) ( interrupt per block )
 
 ## categorization
+
 * single processor ( 1 gp processor ) ( maybe lot of special purpose processor )
 * multi processor ( parallel system sharing bus or clock )
     * thrughput

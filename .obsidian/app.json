@@ -6,6 +6,6 @@
   "useMarkdownLinks": true,
   "showUnsupportedFiles": false,
   "defaultViewMode": "source",
-  "livePreview": false,
+  "livePreview": true,
   "promptDelete": false
 }

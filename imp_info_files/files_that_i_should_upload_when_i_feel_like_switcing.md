@@ -1,4 +1,0 @@
-- dotfiles 
-- personal obsidian vault
-- cpp
-- todo-app
