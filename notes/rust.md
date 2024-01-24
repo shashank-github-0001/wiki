@@ -23,8 +23,9 @@
 * for named arguement padding use $ after the name
 * {} works on thins that implement fmt::Display
 * fmt::debug is {:?}
-* 
 
 ## fmt::Debug
 * if you want you can derive from fmt::Debug by using #\[derive(debug)\]
 
+## important things that i need to remember
+* 
