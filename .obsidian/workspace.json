@@ -11,11 +11,28 @@
             "id": "053d480da3ee6efd",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "notes_for_myself/Morning_routine.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d6b5b7733bc36d4f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes_for_myself/things_that_i'm_going_to_learn.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,6 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "notes_for_myself/things_that_i'm_going_to_learn.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "notes_for_myself/things_that_i'm_going_to_learn.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +137,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "notes_for_myself/things_that_i'm_going_to_learn.md"
+              }
             }
           }
         ]
@@ -138,21 +159,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "760f13c7b7d09a58",
+  "active": "d6b5b7733bc36d4f",
   "lastOpenFiles": [
+    "notes_for_myself/Morning_routine.md",
+    "notes_for_myself/things_that_i'm_going_to_learn.md",
+    "imp_info_files/march.md",
     "2024-01-12.md",
     "Untitled.canvas",
-    "imp_info_files/march.md",
-    "notes/os.md",
-    "notes/dco.md",
-    "notes/python.md",
+    "notes_notes/os.md",
+    "notes_notes/dco.md",
+    "notes_notes/python.md",
     "imp_info_files/things-to-remember.md",
     "imp_info_files/just-delete-this.md",
-    "notes/rust.md",
-    "notes/think.md",
+    "notes_notes/rust.md",
+    "notes_notes/think.md",
     "projects/govenment_helping_app.md",
     "untitles.md",
-    "notes/uhv.md",
+    "notes_notes/uhv.md",
     "Welcome.md"
   ]
 }
