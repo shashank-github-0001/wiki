@@ -1,7 +1,9 @@
 ## 12-2 monday
 ## 13-2 tuesday 
 ## 14-2 wednesday
+* submit math tutorial
 ## 15-2 thursday
+* submit dms tutorial
 * os quiz
 ## 16-2 friday
 * ds lab exam
