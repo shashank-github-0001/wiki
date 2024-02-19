@@ -1,2 +1,12 @@
-== things to remember in the clg ==
-    * take the printout for the maths notes
+# calender
+## 19-2-2024
+* dms-quiz
+* unix-record
+## 20-2-2024
+* python-project
+* leet-code-submission
+## 21-2-2024
+* math-quiz
+## 23-2-2024
+* unix-lab-exam
+* dms-tutorial
