@@ -193,7 +193,7 @@ Implement the MyStack class:
     * int top() Returns the element on the top of the stack.
     * boolean empty() Returns true if the stack is empty, false otherwise
 
-    ```cpp
+```cpp
 #include <bits/stdc++.h>
 #include <queue>
     using namespace std;
