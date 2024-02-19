@@ -85,3 +85,49 @@ class Solution {
         }
 };
 ```
+### 20. Valid Parentheses
+* Solved
+* Easy
+  
+Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+An input string is valid if:
+
+* Open brackets must be closed by the same type of brackets.
+* Open brackets must be closed in the correct order.
+* Every close bracket has a corresponding open bracket of the same type
+```cpp
+#include <iostream>
+#include <stack>
+#include <string>
+using namespace std;
+
+
+
+class Solution {
+    public:
+        bool isValid(string s) {
+            stack<char> params;
+            for(const auto chars : s ){
+                switch(chars){
+                    case '(': params.push(chars);
+                              break;
+                    case ')': if(!params.empty() && params.top()=='(') params.pop();
+                              else return false;
+                              break;
+                    case '[': params.push(chars);
+                              break;
+                    case ']': if(!params.empty() && params.top()=='[') params.pop();
+                              else return false;
+                              break;
+                    case '{': params.push(chars);
+                              break;
+                    case '}': if(!params.empty() && params.top()=='{') params.pop();
+                              else return false;
+                              break;
+                }
+            }
+            if(params.empty()) return true;
+            else return false;
+        }
+};
+```
