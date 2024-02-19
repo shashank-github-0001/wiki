@@ -1,4 +1,4 @@
-[##](##) Tree:
+## Tree:
 ### 94. Binary Tree Inorder Traversal
 * Solved
 * Easy
@@ -188,12 +188,12 @@ class Solution {
 Implement a last-in-first-out (LIFO) stack using only two queues. The implemented stack should support all the functions of a normal stack (push, top, pop, and empty).
 Implement the MyStack class:
 
-* void push(int x) Pushes element x to the top of the stack.
-* int pop() Removes the element on the top of the stack and returns it.
-* int top() Returns the element on the top of the stack.
-* boolean empty() Returns true if the stack is empty, false otherwise
+    * void push(int x) Pushes element x to the top of the stack.
+    * int pop() Removes the element on the top of the stack and returns it.
+    * int top() Returns the element on the top of the stack.
+    * boolean empty() Returns true if the stack is empty, false otherwise
 
-```cpp
+    ```cpp
 #include <bits/stdc++.h>
 #include <queue>
     using namespace std;
@@ -325,6 +325,36 @@ class Solution {
             }
             if ( temp1->next == nullptr ) temp1->next = temp2;
             return list1;
+        }
+};
+```
+
+### 24. Swap Nodes in Pairs
+* Solved
+* Medium
+
+Given a linked list, swap every two adjacent nodes and return its head. You must solve the problem without modifying the values in the list's nodes (i.e., only nodes themselves may be changed.)
+```cpp
+struct ListNode {
+    int val;
+    ListNode *next;
+    ListNode() : val(0), next(nullptr) {}
+    ListNode(int x) : val(x), next(nullptr) {}
+    ListNode(int x, ListNode *next) : val(x), next(next) {}
+};
+
+class Solution {
+    public:
+        ListNode* swapPairs(ListNode* head) {
+            if(head==nullptr || head->next==nullptr) return head;
+            ListNode* temp = head;
+            while (temp!=nullptr && temp->next!=nullptr) {
+                int temp_val = temp->val;
+                temp->val = temp->next->val;
+                temp->next->val = temp_val;
+                temp = temp->next->next;
+            }
+            return head;
         }
 };
 ```
