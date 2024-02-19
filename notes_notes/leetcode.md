@@ -10,30 +10,30 @@
 using namespace std;
 
 struct TreeNode {
-	int val;
-	TreeNode *left;
-	TreeNode *right;
-	TreeNode() : val(0), left(nullptr), right(nullptr) {}
-	TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
-	TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode() : val(0), left(nullptr), right(nullptr) {}
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+    TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
 class Solution {
-	public:
-    	vector<int> inorderTraversal(TreeNode* root) {
-        	vector<int> result;
-        	helperFunction(root, result);
-        	reverse(result.begin(), result.end());
-        	return result;
-    	}
-	private:
-    	void helperFunction(TreeNode* root, vector<int>& result){
-        	if(root!=nullptr){
-            	helperFunction(root->right, result);
-            	result.push_back(root->val);
-            	helperFunction(root->left, result);
-        	}
-    	}
+    public:
+        vector<int> inorderTraversal(TreeNode* root) {
+            vector<int> result;
+            helperFunction(root, result);
+            reverse(result.begin(), result.end());
+            return result;
+        }
+    private:
+        void helperFunction(TreeNode* root, vector<int>& result){
+            if(root!=nullptr){
+                helperFunction(root->right, result);
+                result.push_back(root->val);
+                helperFunction(root->left, result);
+            }
+        }
 };
 ```
 
@@ -41,7 +41,7 @@ class Solution {
 ### 71. Simplify Path
 * Solved
 * Medium
- 
+
 Given a string path, which is an absolute path (starting with a slash '/') to a file or directory in a Unix-style file system, convert it to the simplified canonical path. In a Unix-style file system, a period '.' refers to the current directory, a double period '..' refers to the directory up a level, and any multiple consecutive slashes (i.e. '//') are treated as a single slash '/'. For this problem, any other format of periods such as '...' are treated as file/directory names. The canonical path should have the following format:
 
 * The path starts with a single slash '/'.
@@ -88,7 +88,7 @@ class Solution {
 ### 20. Valid Parentheses
 * Solved
 * Easy
-  
+
 Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 An input string is valid if:
 
@@ -112,18 +112,18 @@ class Solution {
                     case '(': params.push(chars);
                               break;
                     case ')': if(!params.empty() && params.top()=='(') params.pop();
-                              else return false;
-                              break;
+                                  else return false;
+                                  break;
                     case '[': params.push(chars);
                               break;
                     case ']': if(!params.empty() && params.top()=='[') params.pop();
-                              else return false;
-                              break;
+                                  else return false;
+                                  break;
                     case '{': params.push(chars);
                               break;
                     case '}': if(!params.empty() && params.top()=='{') params.pop();
-                              else return false;
-                              break;
+                                  else return false;
+                                  break;
                 }
             }
             if(params.empty()) return true;
@@ -188,45 +188,94 @@ class Solution {
 Implement a last-in-first-out (LIFO) stack using only two queues. The implemented stack should support all the functions of a normal stack (push, top, pop, and empty).
 Implement the MyStack class:
 
-* void push(int x) Pushes element x to the top of the stack.
-* int pop() Removes the element on the top of the stack and returns it.
-* int top() Returns the element on the top of the stack.
-* boolean empty() Returns true if the stack is empty, false otherwise
+    * void push(int x) Pushes element x to the top of the stack.
+    * int pop() Removes the element on the top of the stack and returns it.
+    * int top() Returns the element on the top of the stack.
+    * boolean empty() Returns true if the stack is empty, false otherwise
 
-```cpp
+    ```cpp
 #include <bits/stdc++.h>
 #include <queue>
-using namespace std;
+    using namespace std;
 
-class MyStack {
-    public:
-        queue<int> main_q, temp_q;
-        MyStack() = default;
-        void push(int x) {
-            if(main_q.empty()){
-                main_q.push(x);
-            } else {
-                temp_q.push(x);
-                while(!main_q.empty()){
-                    temp_q.push(main_q.front());
-                    main_q.pop();
+    class MyStack {
+        public:
+            queue<int> main_q, temp_q;
+            MyStack() = default;
+            void push(int x) {
+                if(main_q.empty()){
+                    main_q.push(x);
+                } else {
+                    temp_q.push(x);
+                    while(!main_q.empty()){
+                        temp_q.push(main_q.front());
+                        main_q.pop();
+                    }
+                }
+                while(!temp_q.empty()) {
+                    main_q.push(temp_q.front());
+                    temp_q.pop();
                 }
             }
-            while(!temp_q.empty()) {
-                main_q.push(temp_q.front());
-                temp_q.pop();
+            int pop() {
+                int val = main_q.front();
+                main_q.pop();
+                return val;
             }
+            int top() {
+                return main_q.front();
+            }
+            bool empty() {
+                return main_q.empty();
+            }
+    };
+```
+
+### Binary Search Tree:
+## 98. Validate Binary Search Tree
+* Solved
+* Medium
+
+Given the root of a binary tree, determine if it is a valid binary search tree (BST).
+
+A valid BST is defined as follows:
+
+* The left subtree of a node contains only nodes with keys less than the node's key.
+* The right subtree of a node contains only nodes with keys greater than the node's key.
+* Both the left and right subtrees must also be binary search trees
+
+```cpp
+#include <algorithm>
+#include <vector>
+using namespace std;
+
+struct TreeNode {
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode() : val(0), left(nullptr), right(nullptr) {}
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+    TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+};
+
+class Solution {
+    public:
+        bool isValidBST(TreeNode* root) {
+            vector<int> result;
+            inorder(root, result);
+            vector<int> after_sorting = result;
+            sort(after_sorting.begin(), after_sorting.end());
+            auto it = unique(after_sorting.begin() , after_sorting.end());
+            after_sorting.erase(it, after_sorting.end());
+            return result == after_sorting;
         }
-        int pop() {
-            int val = main_q.front();
-            main_q.pop();
-            return val;
-        }
-        int top() {
-            return main_q.front();
-        }
-        bool empty() {
-            return main_q.empty();
+    private:
+        void inorder(TreeNode* root, std::vector<int>& result){
+            if(root){
+                inorder(root->left, result);
+                result.push_back(root->val);
+                inorder(root->right, result);
+            }
         }
 };
 ```
