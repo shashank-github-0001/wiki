@@ -1,7 +1,9 @@
 # python 
 
 ## numpy
-### np_array_name =  np.array(array_name) for converting a normal array into np array \
+
+### np_array_name =  np.array(array_name) for converting a normal array into np array
+<br>
 ### normal python list takes up a lot of space even if the list is empty all bcz of the meta data and stuff
 ### np.arange(\[start\], stop, \[step\], \[dtype=None\]) it returns an nd.array unlike range
 ### linspace(start, stop, num=nums_of_elements, endpoint=True, retstep=False)
