@@ -75,8 +75,8 @@
 
 #### matplotlib
 * plt.plot([-1, -4.5, 16, 23], "ob") just plot implicit x axis from 0 and ob is o marker blue color
-* fig, ax = plt.subplots(), xlabel="", ylabel="", title="" you can even do 2, 2, figsize=(,) and to ax[0, 0].plot() in order to do subplots
-* ax.plot() and inside that all the x, y axis pairs ,color ,marker ,linestyle ,linewidth ,label
+* fig, ax = plt.subplots(), xlabel="", ylabel="", title=""
+* ax.plot() and inside that all the x, y axis pairs and color marker linestyle and linewidth
 * ax.bar() x y and color=""
 * ax.hist() y values and bins= // bins is no of bars you want to plot
 * ax.scatter() x, y, color, marker s=int for size
@@ -94,5 +94,3 @@
 * ax.spines['bottom'].set_position(('data',0))
 * ax.yaxis.set_ticks_position('left')
 * ax.spines['left'].set_position(('data',0))
-
-#### pandas

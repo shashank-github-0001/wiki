@@ -1,4 +1,5 @@
 ## for wallpaper
+* wallpaperscraft.com
 * wallhaven.cc
 * freepik.com
 * wallpapers.com
