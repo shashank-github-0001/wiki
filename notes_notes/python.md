@@ -2,7 +2,7 @@
  
 ## numpy
  
-#### np_array_name =  np.array(array_name) for converting a normal array into np array <br>
+#### np_array_name =  np.array(array_name) for converting a normal array into np array
 #### normal python list takes up a lot of space even if the list is empty all bcz of the meta data and stuff
 #### np.arange(\[start\], stop, \[step\], \[dtype=None\]) it returns an nd.array unlike range
 #### linspace(start, stop, num=nums_of_elements, endpoint=True, retstep=False)
@@ -123,6 +123,7 @@
 #### print(city_frame.loc\["Germany"\]) // select all rows with index Germany
 #### print(city_frame.loc\[\["Germany"\],\["france"\]\]) // select all rows with index Germany and France remember array of arrays
 #### print(city_frame.loc\[condition\]) // select all rows which satisfies a condition
+#### sorting DF city_frame = city_frame.sort_values(by="area", ascending=False)
 #### print(city_frame.loc[condition1 & condition2]) you can give more than one condition with this
 #### city_frame.loc['Switzerland'] = ['Zurich', 415215] // can add a new row list lika a new pair in the dict
 #### city_frame.insert(loc=idx, column='area', value=area) // inserting cols into DFs
